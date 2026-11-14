@@ -7,7 +7,10 @@
 import * as Diff from 'diff';
 import type { DiffStat } from './tools.js';
 
-export const DEFAULT_DIFF_OPTIONS: Pick<Diff.StructuredPatchOptionsNonabortable, 'context' | 'ignoreWhitespace'> = {
+export const DEFAULT_DIFF_OPTIONS: Pick<
+  Diff.StructuredPatchOptionsNonabortable,
+  'context' | 'ignoreWhitespace'
+> = {
   context: 3,
   ignoreWhitespace: true,
 };
